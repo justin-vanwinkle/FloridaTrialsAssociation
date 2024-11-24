@@ -71,10 +71,12 @@ GEM
     webrick (1.9.0)
 
 PLATFORMS
+  arm64-darwin
   universal-darwin-23
   x86_64-linux
 
 DEPENDENCIES
+  google-protobuf (~> 3.23)
   jekyll
   jekyll-feed
   jekyll-seo-tag
