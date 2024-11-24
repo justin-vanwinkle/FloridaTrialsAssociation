@@ -1,8 +1,8 @@
 {
   "name": "florida-trials-association",
   "version": "1.0.0",
-  "description": "Florida Trials Association website",
-  "dependencies": {
+  "private": true,
+  "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.17",
     "daisyui": "^4.7.2",
