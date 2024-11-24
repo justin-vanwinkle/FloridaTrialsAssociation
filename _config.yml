@@ -17,21 +17,21 @@ sass:
 # Navigation
 navigation:
   - title: Home
-    url: /
+    url: /FloridaTrialsAssociation/
   - title: Event Schedule
-    url: /events/
+    url: /FloridaTrialsAssociation/events/
   - title: Forms and Rules
-    url: /forms-rules/
+    url: /FloridaTrialsAssociation/forms-rules/
   - title: Photos
-    url: /photos/
+    url: /FloridaTrialsAssociation/photos/
   - title: Links and Bikes
-    url: /links/
+    url: /FloridaTrialsAssociation/links/
   - title: About Us
-    url: /about/
+    url: /FloridaTrialsAssociation/about/
   - title: Results
-    url: /results/
+    url: /FloridaTrialsAssociation/results/
   - title: What is Moto-Trials?
-    url: /moto-trials/
+    url: /FloridaTrialsAssociation/moto-trials/
 
 exclude:
   - node_modules
