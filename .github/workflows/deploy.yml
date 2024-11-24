@@ -25,10 +25,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          bundler-cache: true
+          bundler-cache: false
 
-      - name: Update bundle platforms
-        run: bundle lock --add-platform x86_64-linux
+      - name: Update bundle platforms and install
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle install
 
       - name: Setup Node
         uses: actions/setup-node@v4
