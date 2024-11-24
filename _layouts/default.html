@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563eb",
+                        secondary: "#0891b2",
+                        accent: "#f59e0b",
+                        neutral: "#1f2937",
+                    }
+                }
+            },
+            daisyui: {
+                themes: ["light"],
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            .prose {
+                max-width: 65ch;
+                @apply mx-auto;
+            }
+            h1 {
+                @apply text-4xl md:text-5xl font-extrabold mb-16 text-center text-primary;
+            }
+            h2 {
+                @apply text-2xl md:text-3xl font-bold mt-16 mb-8 text-primary border-b-2 border-primary/20 pb-4;
+            }
+            h3 {
+                @apply text-xl md:text-2xl font-semibold mt-10 mb-6 text-secondary;
+            }
+        }
+    </style>
+    {% seo %}
+</head>
+
+<body class="min-h-screen flex flex-col bg-base-100">
+    <div class="navbar sticky top-0 z-50 backdrop-blur-lg bg-base-100/90 shadow-sm h-16">
+        <div class="navbar-start">
+            <a href="/" class="text-lg font-bold text-neutral-800 whitespace-nowrap">{{ site.title }}</a>
+        </div>
+
+        <div class="navbar-center">
+            <img src="/assets/images/logo.webp" alt="FTA Logo" class="h-16 w-16 object-contain">
+        </div>
+
+        <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-base-100 rounded-box w-52">
+                    {% for item in site.navigation %}
+                    <li><a href="{{ item.url | relative_url }}"
+                            class="text-neutral-700 hover:text-primary {% if page.url==item.url %}active{% endif %}">{{
+                            item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-grow">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <article class="prose prose-lg mx-auto">
+                {{ content }}
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer footer-center p-8 bg-neutral text-neutral-content">
+        <div class="flex flex-col items-center gap-4">
+            <p class="text-lg">© {{ site.time | date: '%Y' }} Florida Trials Association</p>
+            <div class="flex gap-2 text-sm">
+                Powered by
+                <a href="https://jekyllrb.com" class="link link-hover">Jekyll</a> &
+                <a href="https://daisyui.com" class="link link-hover">DaisyUI</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

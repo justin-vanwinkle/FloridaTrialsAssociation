@@ -1,0 +1,17 @@
+- name: "FTA Championship Round 4"
+  date: "2024-04-20"
+  location: "Croom Motorcycle Area, Brooksville, FL"
+  registration_open: true
+  registration_link: "#"
+
+- name: "Summer Fun Trial"
+  date: "2024-05-15"
+  location: "Hard Rock Cycle Park, Ocala, FL"
+  registration_open: false
+  registration_link: "#"
+
+- name: "Championship Round 5"
+  date: "2024-06-08"
+  location: "TBD"
+  registration_open: false
+  registration_link: "#" 

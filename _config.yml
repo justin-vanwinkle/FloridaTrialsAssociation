@@ -1,0 +1,43 @@
+title: Florida Trials Association
+description: A club dedicated to the family-friendly sport of observed motorcycle trials
+baseurl: ""
+url: "https://floridatrialsassoc.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Event Schedule
+    url: /events/
+  - title: Forms and Rules
+    url: /forms-rules/
+  - title: Photos
+    url: /photos/
+  - title: Links and Bikes
+    url: /links/
+  - title: About Us
+    url: /about/
+  - title: Results
+    url: /results/
+  - title: What is Moto-Trials?
+    url: /moto-trials/
+
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+  - Gemfile
+  - Gemfile.lock
