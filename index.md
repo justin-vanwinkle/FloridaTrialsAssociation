@@ -11,4 +11,8 @@ The Florida Trials Association is a club dedicated to the family-friendly sport 
 
 Pick the level of difficulty, or line, that you want to compete at, from novice, intermediate, sportsman, advanced, expert or champ. Because moto-trials consists of mainly balance and control elements, it sharpens all aspects of riding skills, and is excellent cross training for other motorcycle sports.
 
-We usually have 6 championship point scoring events each year, a few fun events with no championship points, and our annual 2-day "Fun In The Sun" event in March which brings in riders from many states. 
+We usually have 6 championship point scoring events each year, a few fun events with no championship points, and our annual 2-day "Fun In The Sun" event in March which brings in riders from many states.
+
+<div class="video-container">
+    <iframe width="100%" height="450" src="https://www.youtube.com/embed/P7rnQsgPZP8" frameborder="0" allowfullscreen></iframe>
+</div>
