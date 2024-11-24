@@ -8,5 +8,5 @@ gem "webrick"
 
 # Add this platform-specific configuration
 platforms :ruby, :mswin, :mingw, :x64_mingw do
-  gem 'google-protobuf', '~> 3.23'
+  gem 'google-protobuf', '~> 3.25'
 end 
