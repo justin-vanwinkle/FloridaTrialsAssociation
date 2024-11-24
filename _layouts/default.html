@@ -47,13 +47,13 @@
 <body class="min-h-screen flex flex-col bg-base-100">
     <div class="navbar sticky top-0 z-50 backdrop-blur-lg bg-base-100/90 shadow-sm h-16">
         <div class="navbar-start">
-            <a href="{{site.url}}{{ site.baseurl }}" class="text-lg font-bold text-neutral-800 whitespace-nowrap">{{
+            <a href="{{site.url}}/{{ site.basepath }}" class="text-lg font-bold text-neutral-800 whitespace-nowrap">{{
                 site.title
                 }}</a>
         </div>
 
         <div class="navbar-center">
-            <img src="{{ site.baseurl }}/assets/images/logo.webp" alt="FTA" class="h-16 w-16 object-contain">
+            <img src="/{{ site.basepath }}/assets/images/logo.webp" alt="FTA" class="h-16 w-16 object-contain">
         </div>
 
         <div class="navbar-end">
