@@ -47,14 +47,14 @@
 <body class="min-h-screen flex flex-col bg-base-100">
     <div class="navbar sticky top-0 z-50 backdrop-blur-lg bg-base-100/90 shadow-sm h-16">
         <div class="navbar-start">
-            <a href="{{site.url}}/{{ site.basepath }}" class="text-lg font-bold text-neutral-800 whitespace-nowrap">{{
-                site.title
-                }}</a>
+            <a href="{{site.url}}/{{ site.basepath }}"
+                class="text-lg font-bold text-neutral-800 whitespace-nowrap flex items-center gap-2">
+                <img src="/{{ site.basepath }}/assets/images/logo.webp" alt="FTA" class="h-16 w-16 object-contain">
+                <span>{{ site.title }}</span>
+            </a>
         </div>
 
-        <div class="navbar-center">
-            <img src="/{{ site.basepath }}/assets/images/logo.webp" alt="FTA" class="h-16 w-16 object-contain">
-        </div>
+        <div class="navbar-center"> </div>
 
         <div class="navbar-end">
             <div class="dropdown dropdown-end">
