@@ -2,7 +2,7 @@
 
 This is the official website for the Florida Trials Association.
 
-Visit our website at: [floridatrialsassociation.github.io/FloridaTrialsAssociation](https://floridatrialsassociation.github.io/FloridaTrialsAssociation)
+Visit our website at: [justin-vanwinkle.github.io/FloridaTrialsAssociation](https://justin-vanwinkle.github.io/FloridaTrialsAssociation)
 
 ## Development
 
